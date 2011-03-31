@@ -7,6 +7,8 @@
  
 body {
 	background-color: #FFFFFF;
+	overflow-x: hidden;
+	width: 99%;
 }
 
 div.right {
@@ -14,8 +16,24 @@ div.right {
 	margin-left: 1%;
 }
 
-div.no-border {
+div.no-border, div.border-top, div.border-left, div.border-bottom, div.border-right {
 	border: 0px;
+}
+
+div.border-top {
+	border-top: 1px solid #000000;
+}
+
+div.border-right {
+	border-right: 1px solid #000000;
+}
+
+div.border-bottom {
+	border-bottom: 1px solid #000000;
+}
+
+div.border-left {
+	border-left: 1px solid #000000;
 }
 
 header {
@@ -64,12 +82,19 @@ header {
 		
 	aside {
 		float: right;
-		width: 25%;
+		width: 35%;
 	}
 	
 		aside section h3 {
 			font-family: "Arial";
 			font-size: 1.1em;
+			margin-bottom: 0px;
+		}
+		
+		aside section h4 {
+			font-family: "Verdana";
+			font-size: 0.9em;
+			margin: 0px;
 		}
 		
 		aside section div {
@@ -94,3 +119,142 @@ header {
 			aside section ul li {
 				display: inline;
 			}
+			
+		aside section#profile-box-container {
+			/* */
+		}
+		
+			aside section#profile-box-container div#profile-box span {
+				width: auto;
+			}
+			
+		aside section#admin-box {
+			/* */
+		}
+			
+		aside section#connect-with-us {
+			/* */
+		}
+		
+		aside section div#labels-and-authors {
+			width: 40%;
+		}
+		
+			aside section div#labels-and-authors ul {
+				list-style-type: square;
+			}
+			
+				aside section div#labels-and-authors ul li {
+					display: list-item;
+					font-size: 0.8em;
+				}
+				
+					aside section div#labels-and-authors ul li a {
+						color: #000000;
+					}
+				
+		aside section div#blogroll {
+			padding: 5px;
+			padding-left: 0px;
+			width: 60%;
+		}		
+		
+			aside section div#blogroll ul {
+				list-style-type: none;
+				padding-left: 0px;
+			}
+			
+				aside section div#blogroll ul li {
+					display: list-item;
+					font-size: 0.8em;
+					margin-bottom: 20px;
+				}
+				
+					aside section div#blogroll ul li a {
+						color: #000000;
+					}
+				
+		aside section div#labels-and-authors {
+			/* */
+		}
+		
+			aside section div#labels-and-authors ul {
+				list-style-type: none;
+				padding-left: 10px;
+			}
+			
+				aside section div#labels-and-authors ul li {
+					margin-bottom: 2px;
+				}
+		
+article {
+	width: 65%;
+}
+
+	article section {
+		/* */
+	}
+	
+		article section.blog-post {
+			border-bottom: 1px solid #000000;
+			margin: 5px 5px 5px 5px;
+		}
+		
+			article section.blog-post h2 {
+				font-family: "Trebuchet MS";
+				margin-bottom: 0px;
+			}
+				
+				article section.blog-post h2 a {
+					color: #000000;
+				}
+				
+			article section.blog-post span.blog-post-author {
+				margin: 0px 0px 5px 1%;
+			}
+				
+				article section.blog-post span.blog-post-author a {
+					color: #000000;
+				}
+				
+			article section.blog-post span.blog-post-comments {
+				float: right;
+			}
+			
+				article section.blog-post span.blog-post-comments a {
+					color: #000000;
+				}
+			
+			article section.blog-post span.blog-post-date {
+				/* */
+			}
+			
+			article section.blog-post p {
+				text-indent: 10px;
+			}
+		
+footer {
+	background-color: #660066;
+	display: block;
+	height: 100px;
+}
+
+	footer div#copyright {
+		padding: 2% 5% 0% 0%;
+	}
+
+	footer div#footer-links {
+		padding: 1% 0% 0% 5%;
+	}
+	
+		footer div#footer-links ul {
+			list-style-type: none;
+		}
+		
+			footer div#footer-links ul li {
+				display: inline;
+			}
+			
+				footer div#footer-links ul li a {
+					color: #EEEEEE;
+				}
