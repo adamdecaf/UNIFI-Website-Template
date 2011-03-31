@@ -6,7 +6,7 @@
  */
  
 body {
-	background-color: #FFFFFF;
+	background-color: #4B116F;
 	overflow-x: hidden;
 	width: 99%;
 }
@@ -36,16 +36,30 @@ div.border-left {
 	border-left: 1px solid #000000;
 }
 
+section#wrapper {
+	background-color: #FFFFFF;
+	margin-left: 8%;
+	padding: 5px;
+	width: 84%;
+}
+
 header {
 	height: auto;
-	margin: 0% 0% 1% 10%;
+	margin: 0% 0% 1% 0%;
 	width: 100%;
 }
 
 	header nav {
 		/* border: 1px solid #000000; */
-		width: 80%;
+		margin-left: 5%;
+		width: 90%;
 	}
+	
+		header img {
+			border: 0px;
+			margin-left: 1%;
+			width: 98%;
+		}
 	
 		header nav ul {
 			list-style-type: none;
@@ -66,7 +80,8 @@ header {
 				}
 	header div#quote-and-search {
 		/* background: #EEEEEE; */
-		width: 80%;
+		margin-left: 5%;
+		width: 90%;
 	}
 	
 		header div#quote {
@@ -83,7 +98,7 @@ header {
 		
 	aside {
 		float: right;
-		width: 35%;
+		width: 25%;
 	}
 	
 		aside section h3 {
@@ -138,7 +153,8 @@ header {
 		}
 		
 		aside section div#labels-and-authors {
-			width: 40%;
+			padding-left: 0%;
+			width: 100%;
 		}
 		
 			aside section div#labels-and-authors ul {
@@ -157,7 +173,7 @@ header {
 		aside section div#blogroll {
 			padding: 5px;
 			padding-left: 0px;
-			width: 60%;
+			width: 100%;
 		}		
 		
 			aside section div#blogroll ul {
