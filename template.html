@@ -35,8 +35,8 @@
 			<!-- Search Box -->
 			<div id="search">
 				<form action="template.html" method="GET">
-					<input type="text" name="query" placeholder="Search..." />
-				</form>			
+					<input type="search" id="search-box" name="query" placeholder="Search..." />
+				</form>
 			</div>
 			
 			<!-- Rotating Quote -->
@@ -290,5 +290,29 @@ Seriously, lets do this. Don't have a camera? Markers? A pen? My phone number is
 		</div>
 	</footer>
 
+<script>
+/**
+ * Set up a script to rotate quotes.
+ */
+function bind_quote_rotate() {
+	var quotes = Array(5);
+		quotes[0] = "\"We are star stuff\" -- Carl Sagan";	
+		quotes[1] = "\"The secrets of evolution are time and death.\" -- Carl Sagan";
+		quotes[2] = "\"Scientists love mysteries, they love not knowing.\" -- Lawrence Krauss";
+		quotes[3] = "\"Don't panic.\" -- Douglas Adams";
+		quotes[4] = "\"I can\'t believe the special stories about our relationship to the universe at large.\" -- Richard Feynman";
+	
+	var elm = document.querySelector("#quote");
+		elm.onclick = function (e) {
+			var pick = Math.floor(Math.random() * quotes.length);
+			this.innerHTML = quotes[pick];
+		};
+}
+
+window.onload = function () {
+	// Bind the rotating quote function to the page.
+	bind_quote_rotate();
+};
+</script>
 </body>
 </html>

@@ -70,6 +70,7 @@ header {
 	}
 	
 		header div#quote {
+			cursor: pointer;
 			font-family: "Sans-Serif";
 			font-size: 0.9em;
 			text-align: center;
