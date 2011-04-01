@@ -6,7 +6,8 @@
  */
  
 body {
-	background-color: #4B116F;
+	/* background-color: #4B116F; */
+	background-color: #36317d;
 	overflow-x: hidden;
 	width: 99%;
 }
@@ -34,6 +35,10 @@ div.border-bottom {
 
 div.border-left {
 	border-left: 1px solid #000000;
+}
+
+hr.no-hr {
+	line-height: 0px;
 }
 
 section#wrapper {
@@ -68,6 +73,7 @@ header {
 			header nav ul li {
 				background-color: #000000;
 				border: 1px solid #000000;
+				cursor: pointer;
 				display: inline-block;
 				padding: 1% 0% 1% 0%;
 				margin-top: -10px;
@@ -255,22 +261,25 @@ article {
 			}
 
 footer {
-	background-color: #660066;
+	background-color: #36317d;
 	display: block;
-	height: 100px;
+	height: 50px;
 }
 
 	footer div#copyright {
-		padding: 2.4% 0% 0% 5%;
+		color: #FFFFFF;
+		padding: 15px 0% 0% 5%;
 		width: 50%;
 	}
 
 	footer div#footer-links {
-		padding: 1% 0% 0% 5%;
+		padding: 15px 0% 0% 5%;
 	}
 	
 		footer div#footer-links ul {
 			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
 		}
 		
 			footer div#footer-links ul li {

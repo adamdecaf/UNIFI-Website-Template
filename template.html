@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>UNIFI Website Template</title>
-	<meta charset="urf-8" />
+	<meta charset="utf-8" />
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,20 +15,20 @@
 	-->
 	<header>
 		<!-- Header Image -->
-		<img src="images/final-header.png" alt="Header Image" />
+		<img src="images/final-header.png" height="200px" alt="Header Image" />
 		
 		<!-- Nav Items -->
 		<nav>
 			<ul>
-				<li class="nav-item"><a href="#">Home</a></li>
-				<li class="nav-item"><a href="#">About</a></li>
-				<li class="nav-item"><a href="#">Contact</a></li>
-				<li class="nav-item"><a href="#">Brunch</a></li>
-				<li class="nav-item"><a href="#">Store</a></li>
-				<li class="nav-item"><a href="#">Calendar</a></li>
-				<li class="nav-item"><a href="#">Darwin Week</a></li>
-				<li class="nav-item"><a href="#">Events</a></li>
-				<li class="nav-item"><a href="#">Authors</a></li>
+				<li class="nav-item"><a href="?">Home</a></li>
+				<li class="nav-item"><a href="?about">About</a></li>
+				<li class="nav-item"><a href="?contact">Contact</a></li>
+				<li class="nav-item"><a href="?brunch">Brunch</a></li>
+				<li class="nav-item"><a href="?store">Store</a></li>
+				<li class="nav-item"><a href="?calendar">Calendar</a></li>
+				<li class="nav-item"><a href="?darwinweek">Darwin Week</a></li>
+				<li class="nav-item"><a href="?events">Events</a></li>
+				<li class="nav-item"><a href="?authors">Authors</a></li>
 			</ul>
 		</nav>
 		
@@ -76,7 +76,7 @@
 		
 		<section id="admin-box">
 			<h3>Admin:</h3>
-			<div id="admin-box">
+			<div>
 
 				<div class="right no-border">
 					<span>
@@ -232,7 +232,7 @@ Want to actually help help with the movement? Grab a sheet of paper, write that 
 Seriously, lets do this. Don't have a camera? Markers? A pen? My phone number is in the contact page. Send me a text and I'll bring them to you. Let me kick this off. This is what an atheist looks like.
 			</p>
 			<span class="blog-post-comments"><a href="#">Comments  (99)</a></span>
-			<span class="blog-post-date">March 23rd, 2011<span>
+			<span class="blog-post-date">March 23rd, 2011</span>
 		</section>		
 		
 		<section class="blog-post">
@@ -250,7 +250,7 @@ Seriously, lets do this. Don't have a camera? Markers? A pen? My phone number is
 
 			<p>Congratulations, Mr. Dippold. I look forward to working with you, and I am confident in our ability to continue to make steady progress for UNIFI in the year to come.</p>
 			<span class="blog-post-comments"><a href="#">Comments  (99)</a></span>
-			<span class="blog-post-date">March 23rd, 2011<span>
+			<span class="blog-post-date">March 23rd, 2011</span>
 		</section>
 		
 		<section class="blog-post">
@@ -268,7 +268,7 @@ Seriously, lets do this. Don't have a camera? Markers? A pen? My phone number is
 			
 			<p>Again, congratulations Cory. I've loved having you as my Vice President, and I look forward to seeing what you'll do with the new job.</p>
 			<span class="blog-post-comments"><a href="#">Comments  (99)</a></span>
-			<span class="blog-post-date">March 23rd, 2011<span>
+			<span class="blog-post-date">March 23rd, 2011</span>
 		</section>
 	</article>
 
@@ -276,7 +276,7 @@ Seriously, lets do this. Don't have a camera? Markers? A pen? My phone number is
 		The footer which contains the legal documentation, copyright, and other
 		things as needed.
 	-->
-	<hr />
+	<hr class="no-hr" />
 	<footer>
 		<div id="copyright" class="right">
 			Copyright &copy; 2011 University of Northern Iowa Freethinkers and Inquirers
@@ -312,9 +312,23 @@ function bind_quote_rotate() {
 		};
 }
 
+/**
+ * Set up the nav elements to go to their child a's link.
+ */
+function bind_nav_links() {
+	window.nav_elms = document.querySelectorAll('.nav-item');
+	var i = 0, len = window.nav_elms.length;
+	for (i; i < len; i++) {
+		window.nav_elms[i].onclick = function () { window.location = this.childNodes[0].href; };
+	}
+}
+
 window.onload = function () {
 	// Bind the rotating quote function to the page.
 	bind_quote_rotate();
+	
+	// Map the nav elements to their first child's href.
+	bind_nav_links();
 };
 </script>
 </body>
