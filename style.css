@@ -71,7 +71,7 @@ header {
 		}
 		
 			header nav ul li {
-				background-color: #000000;
+				background: #000000 url('images/nav-bg.png') repeat-x;
 				border: 1px solid #000000;
 				cursor: pointer;
 				display: inline-block;
@@ -81,9 +81,15 @@ header {
 				width: 10%;
 			}
 			
+				header nav ul li:hover {
+					background: #000000 url('images/nav-bg-hover.png') repeat-x;
+				}
+			
 				header nav ul li a {
 					color: #FFFFFF;
+					text-decoration: none;
 				}
+				
 	header div#quote-and-search {
 		/* background: #EEEEEE; */
 		margin-left: 5%;
@@ -99,11 +105,18 @@ header {
 		
 		header div#search {
 			float: right;
-			margin-top: -6px;	
+			margin-top: -6px;
 		}
+		
+			header div#search input {
+				font-size: 1.5em;
+				height: 40px;
+				width: 250px;
+			}
 		
 	aside {
 		float: right;
+		margin-right: 2%;
 		width: 25%;
 	}
 	
@@ -155,8 +168,17 @@ header {
 		}
 			
 		aside section#connect-with-us {
-			/* */
+			width: 100%;
 		}
+		
+			aside section#connect-with-us div#social-media ul {
+				margin-left: -8%;
+			}
+		
+				aside section#connect-with-us div#social-media .social-media-icon {
+					height: 38px;
+					width: 38px;
+				}
 		
 		aside section div#labels-and-authors {
 			padding-left: 0%;
@@ -211,6 +233,7 @@ header {
 				}
 		
 article {
+	margin-left: 2%;
 	width: 60%;
 }
 
