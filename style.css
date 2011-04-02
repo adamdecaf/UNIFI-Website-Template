@@ -276,7 +276,7 @@ article {
 				}
 			
 			article section.blog-post span.blog-post-date {
-				/* */
+				float: right;
 			}
 			
 			article section.blog-post p {
