@@ -12,9 +12,24 @@ body {
 	width: 99%;
 }
 
+img {
+	border: 0px;
+}
+
 div.right {
 	float: right;
 	margin-left: 1%;
+}
+
+img.right {
+	border: 0px;
+	float: right;
+	margin-right: 1%;
+}
+
+span.right {
+	float: right;
+	margin-right: 1%;
 }
 
 div.no-border, div.border-top, div.border-left, div.border-bottom, div.border-right {
@@ -234,11 +249,15 @@ header {
 		
 article {
 	margin-left: 2%;
-	width: 60%;
+	width: 70%;
 }
 
-	article section {
+	article div#blog-wrapper {
 		/* */
+	}
+
+	article section {
+		width: 95%;
 	}
 	
 		article section.blog-post {
