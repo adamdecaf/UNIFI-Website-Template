@@ -268,7 +268,7 @@ article {
 				}
 				
 			article section.blog-post span.blog-post-comments {
-				float: right;
+				margin-bottom: 5px;
 			}
 			
 				article section.blog-post span.blog-post-comments a {
