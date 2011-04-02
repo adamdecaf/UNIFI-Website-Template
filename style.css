@@ -60,7 +60,7 @@ div#wrapper {
 	background-color: #FFFFFF;
 	margin-left: 8%;
 	padding: 5px;
-	width: 84%;
+	width: 1050px;
 }
 
 header {
@@ -90,10 +90,11 @@ header {
 				border: 1px solid #000000;
 				cursor: pointer;
 				display: inline-block;
+				font-family: Helvetica;
 				padding: 1% 0% 1% 0%;
 				margin-top: -10px;
 				text-align: center;
-				width: 10%;
+				width: 11%;
 			}
 			
 				header nav ul li:hover {
@@ -110,13 +111,6 @@ header {
 		margin-left: 5%;
 		width: 90%;
 	}
-	
-		header div#quote {
-			cursor: pointer;
-			font-family: "Sans-Serif";
-			font-size: 0.9em;
-			text-align: center;
-		}
 		
 		header div#search {
 			float: right;
@@ -136,13 +130,14 @@ header {
 		}
 		
 		aside section h4 {
-			font-family: "Verdana";
+			font-family: "Helvetica";
 			font-size: 0.9em;
 			margin: 0px;
 		}
 		
 		aside section div {
 			border: 1px solid #000000;
+			font-family: Arial;
 			padding: 3px;
 		}
 		
@@ -167,7 +162,7 @@ header {
 		aside section#search input {
 			font-size: 1.5em;
 			height: 40px;
-			width: 250px;
+			width: 100%;
 		}
 			
 		aside section#profile-box-container {
@@ -194,6 +189,26 @@ header {
 					height: 38px;
 					width: 38px;
 				}
+				
+		aside section#quote-and-search div#quote {
+			cursor: pointer;
+			font-family: "Georgia", Times New Roman, Sans-Serif;
+			font-size: 0.9em;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		
+			aside section#quote-and-search div#quote span#quote-body:before {
+				color: #666666;
+				content: "“";
+				font-size: 1.1em;
+			}
+			
+			aside section#quote-and-search div#quote span#quote-body:after {
+				color: #666666;
+				content: "”";
+				font-size: 1.1em;
+			}
 		
 		aside section div#labels-and-authors {
 			padding-left: 0%;
@@ -270,7 +285,7 @@ article {
 			}
 		
 			article section.blog-post h2 {
-				font-family: "Trebuchet MS";
+				font-family: "Helvetica";
 				margin-bottom: 0px;
 			}
 				
@@ -279,6 +294,8 @@ article {
 				}
 				
 			article section.blog-post span.blog-post-author {
+				font-family: Arial;
+				font-size: 0.8em;
 				margin: 0px 0px 5px 1%;
 			}
 				
@@ -287,6 +304,8 @@ article {
 				}
 				
 			article section.blog-post span.blog-post-comments {
+				font-family: Arial;
+				font-size: 0.8em;
 				margin-bottom: 5px;
 			}
 			
@@ -294,12 +313,10 @@ article {
 					color: #000000;
 				}
 			
-			article section.blog-post span.blog-post-date {
-				float: right;
-			}
-			
 			article section.blog-post p {
+				font-family: Arial;
 				text-indent: 10px;
+				font-size: 12pt;
 			}
 
 footer {
